@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from posts.models import Post
 
 
-class Likes(models.Model):
+class Like(models.Model):
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     post = models.ForeignKey(
         Post, related_name='likes', on_delete=models.CASCADE
