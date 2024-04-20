@@ -36,6 +36,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-chrisdiggle1-drfapi-0zqvuyhyxbz.ws-eu110.gitpod.io']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-chrisdiggle1-drfapi-0zqvuyhyxbz.ws-eu110.gitpod.io',
+]
 
 # Application definition
 
@@ -49,6 +52,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'rest_framework',
+    'django_filters',
 
     'profiles',
     'posts',
