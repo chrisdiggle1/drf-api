@@ -61,7 +61,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = ['8000-chrisdiggle1-drfapi-0zqvuyhyxbz.ws-eu110.gitpod.io',
-                 'walkthrough-drf-api.herokuapp.com']
+                 'https://walkthrough-drf-api-1c81384c884e.herokuapp.com']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-chrisdiggle1-drfapi-0zqvuyhyxbz.ws-eu110.gitpod.io',
